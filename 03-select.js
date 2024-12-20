@@ -65,3 +65,9 @@ SELECT UNIQUE Department FROM Employees;
 SELECT EmployeeName
 FROM Employees
 WHERE Salary > ALL (SELECT Salary FROM Employees WHERE Department = 'Sales');
+
+//FIRST:returns the first value of the selected column;
+SELECT FIRST(column_name) FROM table_name;
+
+//LAST:returns the last value of the selected column.
+SELECT LAST(column_name) FROM table_name;
